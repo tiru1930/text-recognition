@@ -1,0 +1,12 @@
+Text-recognition using Convolutional Recurrent Neural Network on IIIT 5k word dataset
+
+#download dataset and keep it in data directory
+	https://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html
+
+#install lmdb
+
+#run prepare_lmdb_data_for_IIIT5k.py to prepare dataset
+
+#run Train.py to train the model (Need to fineTune for better performance working)
+
+#demo.py can get the output for single image
