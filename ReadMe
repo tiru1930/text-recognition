@@ -10,3 +10,72 @@ Text-recognition using Convolutional Recurrent Neural Network on IIIT 5k word da
 #run Train.py to train the model (Need to fineTune for better performance working)
 
 #demo.py can get the output for single image
+
+
+#sampleOutput:
+
+he----------------l------t => helt                , groundTruth: HELT                
+sc----------o--o-l--e----r => scooler             , groundTruth: SCOOTER             
+sh---------u--tt-tt-ee---r => shutter             , groundTruth: SHUTTER             
+nn------p--oo-r-t-aaann--t => nportant            , groundTruth: IMPORTANT           
+in-----v-ee-ree-a-t-g-i--n => invereatgin         , groundTruth: INVERCARGILL        
+wh-------------i--t------e => white               , groundTruth: WHITE               
+ci-------nn--e--mm--aa---s => cinemas             , groundTruth: CINEMAS             
+be---------fiin--s--a-l--e => befinsale           , groundTruth: PROVINSIALE         
+ba-------------e-t-ll----a => baetla              , groundTruth: ISABELLA            
+be-----------f---o-rr----e => before              , groundTruth: BEFORE              
+we---------------r-------e => were                , groundTruth: WERE                
+de--------------p--------p => depp                , groundTruth: DEPP                
+2------------------------a => 2a                  , groundTruth: 24                  
+a------mm---e--r-i--c---aa => america             , groundTruth: AMERICA             
+2------------------------2 => 22                  , groundTruth: 212                 
+lo------------------g----g => logg                , groundTruth: LONG                
+a-----------ll----f------a => alfa                , groundTruth: ALFA                
+jo-----------------------n => jon                 , groundTruth: JOIN                
+pr----------ii----nn-----e => prine               , groundTruth: PRIME               
+be------i--l--e-n--g-----n => beilengn            , groundTruth: BETHLEHEM           
+a------i--ww---aa--yy----s => aiways              , groundTruth: ALWAYS              
+aa-------s--o---u-t-ee---y => asoutey             , groundTruth: ABSOLUTELY          
+we----------e-----vv-----e => weeve               , groundTruth: WEVE                
+9------------------------5 => 95                  , groundTruth: 95                  
+wh----------------e------n => when                , groundTruth: WHEN                
+le-----------------------s => les                 , groundTruth: LETS                
+sp-------m--g--li--------l => spmglil             , groundTruth: SANGAM              
+fl--------aan--n--ee-r---t => flannert            , groundTruth: FLANNERY            
+te----------------k------t => tekt                , groundTruth: TEXT                
+ju---------------ss------t => just                , groundTruth: JUST                
+pe----------n---a------nng => penang              , groundTruth: PENANG              
+do-----------w---n-l-ee--y => downley             , groundTruth: DOWNLEY             
+ne----------a-rr--e--ss--t => nearest             , groundTruth: NEAREST             
+ro------------m--aaa-----n => roman               , groundTruth: ROMAN               
+a----------g--e-ll-ee----s => ageles              , groundTruth: ANGELES             
+c-------------f----------n => cfn                 , groundTruth: CFN                 
+2------------------------6 => 26                  , groundTruth: 26                  
+no---------------k--i----a => nokia               , groundTruth: NOKIA               
+ww-------------i-tt------e => wite                , groundTruth: WRITE               
+wa------------s--oo--n---s => wasons              , groundTruth: WILSONS             
+aa-----------------------i => ai                  , groundTruth: TALL                
+sh----------------oo-----p => shop                , groundTruth: SHOP                
+ww------------n--r-------h => wnrh                , groundTruth: WWW                 
+t------------------------o => to                  , groundTruth: TO                  
+a------------------------- => a                   , groundTruth: A                   
+ho-------------mm---e----s => homes               , groundTruth: HOMES               
+in-------------a---------x => inax                , groundTruth: IMAX                
+3------------------------7 => 37                  , groundTruth: 37                  
+le-----------------f-----t => left                , groundTruth: LEFT                
+ju----------------s------t => just                , groundTruth: JUST                
+fo-----------------------x => fox                 , groundTruth: FOX                 
+o------------------------f => of                  , groundTruth: OF                  
+sh----------------o------p => shop                , groundTruth: SHOP                
+th-----------------------e => the                 , groundTruth: THE                 
+tr-----------aa---c------k => track               , groundTruth: TRACK               
+ba---------------n------nk => bannk               , groundTruth: BANK                
+i------------------------n => in                  , groundTruth: IN                  
+ja------------s---oo-----n => jason               , groundTruth: JASON               
+ki---------ii---g--h-----t => kiight              , groundTruth: KNIGHT              
+1a---------------k-------m => 1akm                , groundTruth: 143KM               
+ch-----------aa--rrtt----s => charts              , groundTruth: CHARTS              
+2-------2----35---4------3 => 223543              , groundTruth: 12345               
+0------------------------6 => 06                  , groundTruth: 06                  
+ha------n-adg--e-n--e-n--t => hanadgenent         , groundTruth: MANAGEMENT          
+Test loss: 0.016473, accuray: 0.550781

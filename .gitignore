@@ -1,0 +1,14 @@
+**/data/*
+**/expr/*
+**/lmdb_data/*
+*.mdb
+*.pth
+*.tar
+*.sh
+*.txt
+*.ipynb
+*.zip
+*.eps
+*.pdf
+**/__pycache__/*
+*.json

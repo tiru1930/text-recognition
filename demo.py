@@ -3,15 +3,16 @@ from torch.autograd import Variable
 import utils
 import dataset
 from PIL import Image
-import models.crnn as crnn
+import models.crnn as c_rnn
 
 
 def getPrediction(imagePath):
-    model_path = './expr/netCRNN_4.pth'
+    model_path = './expr/netCRNN_999.pth'
     alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
-    model = crnn.CRNN(32, 1, 37, 256)
+    model = c_rnn.CRNN(32, 1, 37, 256)
     if torch.cuda.is_available():
-        model = model.cuda()
+        # model = model.cuda()
+        model = torch.nn.DataParallel(model).cuda()
     print('loading pretrained model from %s' % model_path)
     model.load_state_dict(torch.load(model_path))
     converter = utils.strLabelConverter(alphabet)
@@ -22,10 +23,10 @@ def getPrediction(imagePath):
         image = image.cuda()
     image = image.view(1, *image.size())
     image = Variable(image)
-
+    print(image.size())
     model.eval()
     preds = model(image)
-
+    print(preds)
     _, preds = preds.max(2)
     preds = preds.transpose(1, 0).contiguous().view(-1)
 
